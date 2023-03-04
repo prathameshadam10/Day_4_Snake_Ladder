@@ -1,5 +1,5 @@
 package com.bridgelabz;
-
+import java.util.Scanner;
 public class SnakeAndLadder {
     public static void main(String[] args) {
         System.out.println("Start the Snake and Ladder Game");
@@ -40,8 +40,5 @@ public class SnakeAndLadder {
         }
         System.out.println("First Player Rolled Dice "+count+" times");
         System.out.println("First Player reached the winnning Position 100");
-
-
     }
-
 }
