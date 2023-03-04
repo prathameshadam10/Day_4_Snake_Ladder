@@ -1,10 +1,10 @@
 package com.bridgelabz;
-
+import java.util.Scanner;
 public class SnakeAndLadder {
     public static void main(String[] args) {
         System.out.println("Start the Snake and Ladder Game");
         System.out.println("Single Player at Start Position 0");
-        int positionFirstPlayer = 0,count=0;;
+        int positionFirstPlayer = 0;
         boolean currentTurn = true;
         while(positionFirstPlayer != 100){
             if(currentTurn == true){
@@ -27,8 +27,8 @@ public class SnakeAndLadder {
                         System.out.println("SNAKE: "+(-RollDice+positionFirstPlayer));
                         System.out.println("Player moves behind by: "+RollDice);
                         positionFirstPlayer = positionFirstPlayer - RollDice;
+                        break;
                 }
-                count++;
                 if(positionFirstPlayer < 0){
                     positionFirstPlayer = 0;
                 }
@@ -38,10 +38,6 @@ public class SnakeAndLadder {
                 System.out.println();
             }
         }
-        System.out.println("First Player Rolled Dice "+count+" times");
-        System.out.println("First Player reached the winnning Position 100");
-
-
+        System.out.println("Player 1 reached the winnning Position 100");
     }
-
 }
